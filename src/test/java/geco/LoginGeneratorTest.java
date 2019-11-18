@@ -27,4 +27,10 @@ public class LoginGeneratorTest {
         String login = lg.generateLoginForNomAndPrenom("Ralling", "John");
         Assert.assertEquals("JRAL2", login);
     }
+
+    @Test
+    public void generateLoginPDUR(){
+        String login = lg.generateLoginForNomAndPrenom("Dùrand", "Paul");
+        Assert.assertEquals("PDUR", login);
+    }
 }
